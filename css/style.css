@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.container {
+    max-width: 1194px;
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+}
+
+.me {
+    background-color: rgba(160, 254, 153, 0.5);
+    border-radius: 20px;
+    flex: 66.66%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding: 20px;
+}
+
+.me-portrait {
+    background: no-repeat center/cover url('../img/portrait.png');
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.me-briefly {
+    margin-left: 20px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.me-name {
+    font-size: 35px;
+
+}
+
+.me-position {
+    font-size: 25px;
+    color: #444;
+}
+
+.my-contacts {
+    flex: 33.33%;
+    border-radius: 20px;
+    background-color: rgba(160, 254, 153, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.contact {}
+
+.section {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    background-color: #eee;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.title {
+    font-size: 30px;
+    padding: 20px;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: row;
+    background-color: #ccc;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.about-me-text {
+    flex: 66.66%;
+}
+
+.about-me-list {
+    flex: 33.33%;
+    font-size: 25px;
+    line-height: 80px;
+    padding-left: 150px;
+    font-style: italic;
+}
+
+.tiles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    min-width: 550px;
+}
+
+.tile {
+    min-width: 200px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 20px;
+    background-color: #fff;
+}
+
+.tile-img {
+    height: 200px;
+    background: no-repeat center/cover;
+    margin-bottom: 20px;
+}
+
+.img-lyceum-bsu {
+    background-image: url('../img/lyceum-bsu.jpg');
+}
+
+.img-bsu {
+    background-image: url('../img/bsu.jpg');
+}
+
+.years {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.institution-name {
+    font-weight: 700;
+}
+
+.additional-info {
+    font-style: italic;
+    font-size: 18px;
+}
+
+.small-sections {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.img-expertsoft {
+    background: no-repeat center/cover url('../img/expertsoft.jpg');
+}
+
+.img-innowise {
+    background: no-repeat center/cover url('../img/innowise.jpg');
+}
