@@ -9,13 +9,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <script src="./js/smoothScroll.js" defer></script>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header class="header container">
+    <div class="menu">
+        <a href="#contacts" class="menu-link">Contacts</a>
+        <a href="#about-me" class="menu-link">About me</a>
+        <a href="#education" class="menu-link">Education</a>
+        <a href="#projects" class="menu-link">Projects</a>
+        <a href="#skills" class="menu-link">Skills</a>
+    </div>
+    <header id="contacts" class="header container">
         <div class="me">
             <div class="me-portrait"></div>
             <div class="me-briefly">
@@ -46,38 +53,24 @@
             </div>
         </div>
     </header>
+    <div id="about-me"></div>
     <section class="section container">
         <h2 class="title">About me</h2>
         <div class="about-me">
-            <p class="about-me-text">I've created a monster
-                'Cause nobody wants to see Marshall no more
-                They want Shady, I'm chopped liver
-                Well if you want Shady, this is what I'll give you
-                A little bit of weed mixed with some hard liquor
-                Some vodka that'll jump start my heart quicker
-                Than a shock when I get shocked at the hospital
-                By the doctor when I'm not co-operating
-                When I'm rockin' the table while he's operating
-                You waited this long, now stop debating
-                'Cause I'm back, I'm on the rag and ovulating
-                I know that you got a job, Ms. Cheney
-                But your husband's heart problem's complicating
-                So the FCC won't let me be
-                Or let me be me, so let me see
-                They try to shut me down on MTV
-                But it feels so empty, without me
-                So, come on and dip, bum on your lips
-                Fuck that, cum on your lips, and some on your tits
-                And get ready, 'cause this shit's about to get heavy
-                I just settled all my lawsuits, fuck you Debbie!</p>
+            <p class="about-me-text">Hardworking student in search of a development experience, especially
+                interested in back-end and data engineering. Thanks to the best University in my country, I have a
+                solid theoretical background and able to acquire practical skills fast. Eager to
+                improve skills related to Java with it's client-server applications or Python with it's data processing
+                tools. I will do my best to make a
+                great contribution to the working atmosphere of your company</p>
             <ul class="about-me-list">
-                <li>Хорош</li>
-                <li>Мегахорош</li>
-                <li>Ультрамегахорош</li>
+                <li>English: B1-B2</li>
+                <li>Russian: native</li>
+                <li>Belarussian: native</li>
             </ul>
         </div>
     </section>
-    <div class="small-sections container">
+    <div id="education" class="small-sections container">
         <section class="section">
             <h2 class="title">Education</h2>
             <div class="tiles">
@@ -105,7 +98,7 @@
                     <p class="years">2022</p>
                     <p class="institution-name">Expertsoft</p>
                     <p class="info">Course</p>
-                    <p class="additional-info">???</p>
+                    <p class="additional-info">Java Web development for e-commerce</p>
                 </div>
                 <div class="tile">
                     <div class="tile-img img-innowise"></div>
@@ -117,6 +110,7 @@
             </div>
         </section>
     </div>
+    <div id="projects"></div>
     <section class="section container">
         <h2 class="title">Projects</h2>
         <div class="tiles">
@@ -134,7 +128,7 @@
                 </ul>
                 <p class="info">Represents the client-server application, e-shop with the whole functionality of
                     a real shop (product list, cart, checkout)</p>
-                <a href="https://github.com/gznznzjsn/phoneshop-servlet-api" class="project-link">view on git</a>
+                <a href="https://github.com/gznznzjsn/phoneshop-servlet-api" class="project-link">View on GitHub</a>
             </div>
             <div class="tile project-tile">
                 <p class="project-name">Sweater</p>
@@ -151,7 +145,7 @@
                 <p class="info">An unended clone of Twitter with messages, stored in database, user roles and
                     authorization</p>
 
-                <a href="https://github.com/gznznzjsn/sweater" class="project-link">view on git</a>
+                <a href="https://github.com/gznznzjsn/sweater" class="project-link">View on GitHub</a>
             </div>
             <div class="tile project-tile">
                 <p class="project-name">Students and Rooms</p>
@@ -167,13 +161,66 @@
                 </ul>
                 <p class="info">Works with database and files of different types through command interface</p>
 
-                <a href="https://github.com/gznznzjsn/studentsAndRooms" class="project-link">view on git</a>
+                <a href="https://github.com/gznznzjsn/studentsAndRooms" class="project-link">View on GitHub</a>
             </div>
         </div>
     </section>
-    <footer class="footer"></footer>
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script src="js/main.js"></script>
+    <div id="skills"></div>
+    <section class="section container">
+        <h2 class="title">Skills </h2>
+        <div class="skill-box">
+            <div class="skill">
+                <p class="skill-name">Java</p>
+            </div>
+            <div class="skill">
+                <p class="skill-name">Servlet API</p>
+            </div>
+            <div class="skill">
+                <p class="skill-name">Spring</p>
+            </div>
+            <div class="skill">
+                <p class="skill-name">Python</p>
+            </div>
+            <div class="skill">
+                <p class="skill-name">PostgreSQL</p>
+            </div>
+            <div class="skill">
+                <p class="skill-name">MySQL</p>
+            </div>
+            <div class="skill">
+                <p class="skill-name">Spark</p>
+            </div>
+            <div class="skill">
+                <p class="skill-name">Airflow</p>
+            </div>
+            <div class="skill">
+                <p class="skill-name">MongoDB</p>
+            </div>
+            <div class="skill">
+                <p class="skill-name">HTML</p>
+            </div>
+            <div class="skill">
+                <p class="skill-name">CSS</p>
+            </div>
+            <div class="skill">
+                <p class="skill-name">JavaScript</p>
+            </div>
+            <div class="skill">
+                <p class="skill-name">Maven</p>
+            </div>
+            <div class="skill">
+                <p class="skill-name">Linux</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer container">
+        <button href="#contacts" class="contacts-scroll">
+            <div href="#contacts" class="contacts-scroll-img"></div>
+            <p href="#contacts" class="contacts-scroll-text">To contacts</p>
+            <div href="#contacts" class="contacts-scroll-img"></div>
+        </button>
+    </footer>
 </body>
 
 </html>

@@ -5,14 +5,39 @@
 }
 
 body {
+    position: relative;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
+    background-color: #eee;
 }
 
 .container {
     max-width: 1194px;
     margin: auto;
 }
+
+.menu {
+    position: sticky;
+    overflow: visible;
+    top: 0;
+    right: 0;
+    max-width: 120px;
+    height: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-link {
+    margin-left: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #000;
+}
+
+.menu-link::after {
+    content: "»";
+}
+
 
 .header {
     display: flex;
@@ -30,6 +55,7 @@ body {
 }
 
 .me-portrait {
+    outline: 3px solid #000;
     background: no-repeat center/cover url('../img/portrait.png');
     width: 200px;
     height: 200px;
@@ -96,6 +122,10 @@ body {
     background: url('../img/github.png');
 }
 
+.contact-link {
+    color: #fff;
+    text-shadow: 0 0 5px #000;
+}
 
 .section {
     margin-top: 50px;
@@ -112,6 +142,7 @@ body {
 }
 
 .about-me {
+    outline: 3px solid #000;
     display: flex;
     flex-direction: row;
     background-color: #fff;
@@ -125,8 +156,8 @@ body {
 
 .about-me-list {
     flex: 33.33%;
-    font-size: 25px;
-    line-height: 80px;
+    font-size: 24px;
+    line-height: 60px;
     padding-left: 150px;
     font-style: italic;
 }
@@ -139,6 +170,7 @@ body {
 }
 
 .tile {
+    outline: 3px solid #000;
     min-width: 200px;
     min-height: 300px;
     display: flex;
@@ -209,4 +241,63 @@ body {
 .project-list {
     margin: 20px;
     text-align: left;
+}
+
+.project-link {
+    font-size: 18px;
+    color: #0f0;
+}
+
+.skill-box {
+    outline: 3px solid #000;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
+}
+
+.skill {
+    background-color: rgba(160, 254, 153, 1);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.skill-name {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.footer {
+    margin-top: 50px;
+}
+
+.contacts-scroll {
+    margin: auto;
+    background: rgba(160, 254, 153, 1);
+    outline: 3px solid #000;
+    border: none;
+    padding: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 200px;
+    margin-bottom: 50px;
+}
+
+.contacts-scroll:hover {
+    cursor: pointer;
+}
+
+.contacts-scroll-img {
+    width: 24px;
+    height: 24px;
+    background: no-repeat center/cover url('../img/arrow.png');
 }
